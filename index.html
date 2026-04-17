@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoomi Sarswat | Magical Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="sorting-hat-spinner">🧙‍♂️</div>
+        <h2 class="cinzel-font">Mischief Managed...</h2>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-wand"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-brand cinzel-font">
+            <span style="letter-spacing: 2px;">B&amp;S</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Journey</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#projects">Spells</a></li>
+            <li><a href="#contact">Owl Post</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="cinzel-font">Hello, I'm <br><span class="highlight">Bhoomi Sarswat</span></h1>
+            <h2 class="typewriter-container">
+                I am a <span id="typewriter" class="cinzel-font"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-tagline Lora-font">
+                "Turning caffeine into code and bugs into features (eventually)."
+            </p>
+            <a href="#projects" class="btn primary-btn">Accio Projects! 🪄</a>
+        </div>
+        <div class="hero-graphics" data-aos="zoom-in" data-aos-delay="200">
+            <img src="profile.jpeg" alt="Bhoomi Sarswat" class="profile-img">
+            <div class="floating-snitch"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">About Me 📜</h2>
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <p>
+                    I’m a Computer Science student who enjoys turning ideas into code and solving problems with a calm, logical approach. I’m constantly learning and exploring new technologies, even if it means spending hours debugging something that turns out to be a missing semicolon. I believe in writing clean, efficient code—and learning from the messy parts along the way. Growing one project at a time, with a bit of curiosity and a lot of patience.
+                </p>
+                <ul class="fun-facts">
+                    <li>🧠 <strong>House:</strong> Ravenclaw (because logic + curiosity = me)</li>
+                    <li>🐾 <strong>Patronus:</strong> Cat (calm, observant, slightly unpredictable)</li>
+                    <li>💻 <strong>Favorite Tech:</strong> VS Code (basically my second home)</li>
+                </ul>
+                <button id="resume-btn" class="btn outline-btn">Download Marauder's Map (Resume) 🗺️</button>
+            </div>
+            <div class="about-stats" style="grid-template-columns: repeat(3, 1fr);" data-aos="fade-left">
+                <div class="stat-card">
+                    <h3 class="cinzel-font">2</h3>
+                    <p style="font-size: 0.9rem;">Years Learning</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="cinzel-font">5-7</h3>
+                    <p style="font-size: 0.9rem;">Projects</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="cinzel-font">10k+</h3>
+                    <p style="font-size: 0.9rem;">Lines of Code</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="cinzel-font">∞</h3>
+                    <p style="font-size: 0.9rem;">Cups of Coffee</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="cinzel-font">100+</h3>
+                    <p style="font-size: 0.9rem;">Bugs Fixed</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="cinzel-font" style="font-size: 1.5rem; margin-top:0.5rem;">countless</h3>
+                    <p style="font-size: 1rem;">Google Searches</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding alt-bg">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">Magical Abilities ✨</h2>
+        
+        <div class="skills-container">
+            <div class="skill-category" data-aos="fade-up">
+                <h3 class="cinzel-font">Charms (Frontend / Web)</h3>
+                <div class="skill-bar">
+                    <span class="skill-label">HTML / CSS</span>
+                    <div class="bar-bg"><div class="bar flex-html" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-label">JavaScript</span>
+                    <div class="bar-bg"><div class="bar flex-js" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-label">React.js</span>
+                    <div class="bar-bg"><div class="bar flex-react" style="width: 75%;"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="cinzel-font">Potions (Backend & Languages)</h3>
+                <div class="skill-bar">
+                    <span class="skill-label">C / C++</span>
+                    <div class="bar-bg"><div class="bar flex-node" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-label">Python & Java</span>
+                    <div class="bar-bg"><div class="bar flex-python" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-label">Node.js / DBMS</span>
+                    <div class="bar-bg"><div class="bar" style="background:#8a2be2; width: 75%;"></div></div>
+                </div>
+            </div>
+            
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="cinzel-font">Transfiguration (Soft Skills)</h3>
+                <div class="tags">
+                    <span class="magic-tag">Problem Solving</span>
+                    <span class="magic-tag">Logical Thinking</span>
+                    <span class="magic-tag">Adaptability</span>
+                    <span class="magic-tag">Teamwork</span>
+                    <span class="magic-tag">Time Management</span>
+                    <span class="magic-tag">Communication</span>
+                    <span class="magic-tag">Attention to Detail 👀</span>
+                    <span class="magic-tag">Git & GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey / Experience Section -->
+    <section id="experience" class="experience section-padding">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">The Journey 🛡️</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="cinzel-font">👩‍💻 Student Developer</h3>
+                    <h4 class="company-name">Self Projects</h4>
+                    <span class="date">2024 - Present</span>
+                    <ul>
+                        <li>Built multiple academic and personal projects using modern web technologies.</li>
+                        <li>Improved problem-solving skills through consistent coding and debugging.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="cinzel-font">💡 Mini Projects & Practice</h3>
+                    <h4 class="company-name">Self Improvement</h4>
+                    <span class="date">Ongoing</span>
+                    <ul>
+                        <li>Created small applications to understand core concepts like frontend, backend, and APIs.</li>
+                        <li>Actively learning and experimenting with new tools and frameworks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding alt-bg">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">Hogwarts Letters (Education) 🎓</h2>
+        <div class="edu-grid">
+            <div class="edu-card letter-style" data-aos="zoom-in">
+                <div class="seal"></div>
+                <h3 class="cinzel-font">B.Tech in CSE</h3>
+                <h4>Noida Institute of Engineering and Technology</h4>
+                <p>2024 - 2028</p>
+                <p>Focus: Web Development, Programming, Problem Solving</p>
+            </div>
+            
+            <div class="edu-card letter-style" data-aos="zoom-in" data-aos-delay="100">
+                <div class="seal"></div>
+                <h3 class="cinzel-font">Senior Secondary (12th Grade)</h3>
+                <h4>Shaiffali Public School</h4>
+                <p>2022 - 2023</p>
+                <p>Science Stream</p>
+            </div>
+
+            <div class="edu-card letter-style" data-aos="zoom-in" data-aos-delay="200">
+                <div class="seal"></div>
+                <h3 class="cinzel-font">Secondary (10th Grade)</h3>
+                <h4>Greater Heights School</h4>
+                <p>2020 - 2021</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="skills section-padding">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">O.W.L.s & N.E.W.T.s (Certifications) 📜</h2>
+        <div class="skills-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap: 1rem;" data-aos="fade-up">
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Oracle Database</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">MongoDB</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Data Structures & Algorithms (DSA-II)</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Twitter Bootstrap</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Database Management System (DBMS)</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Unix & Linux OS</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">OOP using Python</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Programming in C</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Microsoft Office 2016</span>
+            <span class="magic-tag" style="font-size: 1rem; padding: 1rem 1.5rem; background: var(--card-bg); color: var(--accent); border: 2px solid var(--accent);">Programming Fundamentals using Python</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding alt-bg">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">Spells & Projects 🔮</h2>
+        
+        <div class="filter-container" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mini">Mini Projects</button>
+        </div>
+
+        <div class="project-grid">
+            <!-- Keeping placeholders so User can substitute real images later -->
+            <div class="project-card" data-category="web" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="https://via.placeholder.com/300x200/2c3e50/ecf0f1?text=Web+Tech+Project" alt="Web Tech Project">
+                        <h3 class="cinzel-font">Web Tech Project</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3 class="cinzel-font">Web Tech Project</h3>
+                        <p>A collaborative academic project demonstrating web technologies.</p>
+                        <div class="tech-tags">
+                            <span>HTML/CSS</span> <span>JavaScript</span> <span>MySQL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/Falguni-105/Web-Tech-Project" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mini" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="https://via.placeholder.com/300x200/2c3e50/ecf0f1?text=Gov+Schemes" alt="Gov Schemes Frontend">
+                        <h3 class="cinzel-font">Gov Schemes Platform</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3 class="cinzel-font">Gov Schemes Platform</h3>
+                        <p>A frontend portal for finding government schemes using HTML, CSS & Vanilla JS.</p>
+                        <div class="tech-tags">
+                            <span>HTML/CSS</span> <span>JavaScript</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/swttbhoomi/gov-schemes-frontend" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="https://via.placeholder.com/300x200/2c3e50/ecf0f1?text=Portfolio" alt="Project 3">
+                        <h3 class="cinzel-font">Magical Portfolio</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3 class="cinzel-font">Magical Portfolio</h3>
+                        <p>Responsive Harry Potter themed website using HTML/CSS/JS animations.</p>
+                        <div class="tech-tags">
+                            <span>Vanilla JS</span> <span>AOS.js</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">The Daily Prophet Quotes 📰</h2>
+        <div class="testimonial-slider" data-aos="fade-up">
+            <div class="testimonial-track">
+                <div class="testimonial-card active">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>“Survived countless bugs, fixed most of them, and still shows up to code the next day.”</p>
+                    <h4 class="cinzel-font">— Her Laptop</h4>
+                    <span>Full-time Debugging Partner 💻</span>
+                </div>
+                <!-- Additional static hidden testimonial if needed to keep slider buttons from breaking immediately -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>“Turning coffee into clean code with the wisdom of a Ravenclaw.”</p>
+                    <h4 class="cinzel-font">— The Compiler</h4>
+                    <span>Occasional enemy, mostly friend</span>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prev-test"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="next-test"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding alt-bg">
+        <h2 class="section-title cinzel-font" data-aos="fade-down">Send an Owl 📬</h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <p>Have an idea, want to collaborate, or just want to chat about bugs? Send an owl my way!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/bhoomi-sarswat-70a496342?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/swttbhoomi" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:Contact.TheBhoomi@Gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper" data-aos="fade-left">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="john@hogwarts.edu">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="I am writing to..."></textarea>
+                    </div>
+                    <span id="form-message" class="form-msg"></span>
+                    <button type="submit" class="btn primary-btn">Cast Spell (Send) 🪄</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-broom"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <p class="Lora-font">Mischief Managed by <span class="cinzel-font">Bhoomi Sarswat</span> &copy; 2024</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
